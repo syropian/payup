@@ -1,0 +1,249 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+strong {font-weight:bold;}
+em {font-style:italic;}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*End Reset*/
+
+.cf:before, .cf:after {
+    content: "";
+    display: block;
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+    min-height: 100%;
+    background: -webkit-linear-gradient(#94abb8, #f8f8f8);
+    background: linear-gradient(#94abb8, #f8f8f8);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.container {
+    width: 256px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    padding: 0 20px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 15px 0;
+}
+
+p a {
+    text-decoration: none;
+    color: #94abb8;
+    background: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-shadow: none;
+
+}
+
+.form-row {
+    display: block;
+    margin: 20px 0;
+}
+
+input[type=text] {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #687982;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.3);
+    padding: 0 10px;
+    -webkit-transition-duration: 400ms;
+    -moz-transition-duration: 400ms;
+    -ms-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+}
+
+input[type=text]:focus{
+    outline: none;
+    border: 1px solid #2b82d0;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), 0 0 8px rgba(43,130,208, 0.7);
+}
+
+.buyer-name {
+    background-image: url(img/name.png);
+    background-size: 12px 14px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 20px;
+}
+
+.charge-amount {
+    background-image: url(img/amount.png);
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 20px;
+}
+
+.card-number {
+    background-image: url(img/cardnumber.png);
+    background-size: 16px 12px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    text-indent: 20px;
+}
+
+.card-cvc, .card-expiry { width: 100%; text-align: center; }
+
+.halfsies {
+    float: left;
+    width: 50%;
+}
+.halfsies:first-child { padding-right: 20px; }
+
+.submit-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #687982;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), inset 0 1px 0 #fff;
+    background: -webkit-linear-gradient(#f8f8f8, #ddd, #f1f1f1);
+    background: linear-gradient(#f8f8f8, #ddd, #f1f1f1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #fff;
+    color: #687982;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+.submit-button:active {
+    background: #ddd;
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.4), inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.submit-button[disabled="disabled"] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.payment-errors, .payment-success {
+    display: block;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #fff;
+    border-radius: 3px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.payment-errors {
+    color: #f12531;
+}
+
+.payment-success {
+    color: #666;
+}
+
+input.error {
+    border: 1px solid #f12531;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), 0 0 8px rgba(241,37,48, 0.7);
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 100%!important;
+    }
+}
